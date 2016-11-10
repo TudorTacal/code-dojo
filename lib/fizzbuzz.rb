@@ -11,11 +11,11 @@ def divisible_by_15(number)
 end
 
 def is_divisible_by?(number, divisor)
-  number%divisor==0
+  number % divisor == 0
 end
 
 def fizzbuzz(number)
-  return 0 if number==0
+  return number if number == 0
   return "fizzbuzz" if is_divisible_by?(number, 15)
   return "fizz" if is_divisible_by?(number,3)
   return "buzz" if is_divisible_by?(number,5)
