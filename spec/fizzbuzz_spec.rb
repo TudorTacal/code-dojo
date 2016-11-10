@@ -36,4 +36,14 @@ describe "fizzbuzz" do
     expect(is_divisible_by?(5,6)).to eq false
     expect(is_divisible_by?(15,16)).to eq false
   end
+
+  it "should return the number" do
+    expect(fizzbuzz(1)).to eq 1
+  end
+
+  it "should return fizz when number is divisible by 3" do
+    expect(fizzbuzz(3)).to eq 'fizz'
+  end
+
+
 end
