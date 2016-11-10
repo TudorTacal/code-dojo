@@ -25,10 +25,15 @@ describe "fizzbuzz" do
     expect(divisible_by_15(16)).to eq false
   end
 
-  it "checks if a number is divisible by another number" do
+  it "checks if a number is divisible by a divisor" do
     expect(is_divisible_by?(3,3)).to eq true
     expect(is_divisible_by?(5,5)).to eq true
     expect(is_divisible_by?(15,15)).to eq true
-    
+  end
+
+  it "checks if a number is not divisible by a divisor" do
+    expect(is_divisible_by?(3,4)).to eq false
+    expect(is_divisible_by?(5,6)).to eq false
+    expect(is_divisible_by?(15,16)).to eq false
   end
 end
