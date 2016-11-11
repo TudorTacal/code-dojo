@@ -30,12 +30,24 @@ describe "Fizzbuzz" do
     it "and divisor is 3" do
       expect(is_divisible_by?(3,3)).to eq true
     end
-  
+    it "and divisor is 5" do
+      expect(is_divisible_by?(5,5)).to eq true
+    end
+    it "and divisor is 15" do
+      expect(is_divisible_by?(15,15)).to eq true
+    end
+
   end
 
   context "when number is not divisible by divisor" do
     it "and divisor is 3" do
       expect(is_divisible_by?(4,3)).to eq false
+    end
+    it "and divisor is 5" do
+      expect(is_divisible_by?(6,5)).to eq false
+    end
+    it "and divisor is 15" do
+      expect(is_divisible_by?(16,15)).to eq false
     end
   end
 
