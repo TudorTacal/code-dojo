@@ -64,6 +64,9 @@ describe "Fizzbuzz" do
     it "return the number when the number is not divisible by 3 or 5" do
       expect(fizzbuzz(2)).to eq 2
     end
+    it "returns 0 when number is 0" do
+      expect(fizzbuzz(0)).to eq 0
+    end
   end
 
 end
